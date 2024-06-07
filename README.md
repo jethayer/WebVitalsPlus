@@ -1,5 +1,3 @@
-# SER 517 - GROUP F-20
-
 ## WebVitals+ Browser Extension
 
 ### Overview
