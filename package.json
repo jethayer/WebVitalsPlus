@@ -1,0 +1,24 @@
+{
+  "name": "web-vitals-plus",
+  "description": "WebVitals+ Browser Extension",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "concurrently \"cd server && npm i\" \"cd client && npm i\" --names \"server,client\" -c \"bgBlue.bold,bgMagenta.bold\"",
+    "local": "npm run start",
+    "start": "concurrently \"cd server && npm run start:server\" \"cd client && npm run dev\" --names \"server,client\" -c \"bgBlue.bold,bgMagenta.bold\""
+  },
+  "volta": {
+    "node": "20.11.0",
+    "npm": "10.2.4"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.13.2",
+    "@rollup/rollup-win32-x64-msvc": "^4.14.1"
+
+  }
+}
